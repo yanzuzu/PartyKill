@@ -14,7 +14,7 @@ public class MainGameState : GameState {
 		PLAY_STATE = TaskManager.CreateState ();
 
 		TaskManager.AddTask (new PlayerTask (), PLAY_STATE);
-	
+		TaskManager.AddTask (new MonsterTask (), PLAY_STATE);
 	}
 
 	#region implement of GameState

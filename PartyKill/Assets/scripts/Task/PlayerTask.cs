@@ -36,7 +36,15 @@ public class PlayerTask : Task , IInputListener  {
 
 	public override void Update(float p_deltaTime)
 	{
+		if( Input.GetKeyDown(KeyCode.A))
+		{
+			m_player.Attak();
+		}
 
+		if( Input.GetKeyDown( KeyCode.Space ))
+		{
+			m_player.Jump();
+		}
 	}
 
 	#endregion
